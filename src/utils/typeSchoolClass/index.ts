@@ -1,0 +1,22 @@
+export const typeSchoolClass = [
+    "Matemática",
+"Física",
+"Química",
+"Biologia",
+"Geologia",
+"Astronomia",
+"Ciência da Computação",
+"Estatística",
+"Química Orgânica",
+"Microbiologia",
+"Neurociência",
+"Engenharia",
+"Ecologia",
+"Ciência dos Materiais",
+"Psicologia",
+"Economia",
+"História da Ciência",
+"Ética Científica",
+"Filosofia da Ciência",
+"Comunicação Científica"
+];
