@@ -10,7 +10,9 @@ export default function FieldHero() {
     setActiveItem(itemName === activeItem ? null : itemName);
   };
   return (
-    <S.divMainFieldHero>
+    <S.containerFormFields>
+      <S.mainText>Select the Tutor</S.mainText>
+      <S.divMainFieldHero>
       <S.gridContainerItem>
         <S.gridItem
           className={activeItem === "ASTRO" ? "active" : ""}
@@ -48,5 +50,6 @@ export default function FieldHero() {
         <S.gridText>LUNA</S.gridText>
       </S.gridContainerItem>
     </S.divMainFieldHero>
+    </S.containerFormFields>
   );
 }
