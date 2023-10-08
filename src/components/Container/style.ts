@@ -55,15 +55,16 @@ export const Btn = styled.button`
 
   &:hover {
     opacity: 0.8;
+    
   }
 
   @media (max-width: 768px) {
     font-size: 1rem; /* Reduz o tamanho do botão para telas menores */
-    bottom: 0; /* Remove o deslocamento vertical para telas menores */
-    left: 0; /* Remove o deslocamento horizontal para telas menores */
+    bottom: 0; /* Remove o deslocamento vertical para telas menores */ /* Remove o deslocamento horizontal para telas menores */
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 130px;
   }
 `;
 
