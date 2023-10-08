@@ -8,7 +8,7 @@ type StyledNavProps = {
   backgroundColor: string;
 };
 
-const StyledNav = styled(Nav)<StyledNavProps>`
+const StyledNav = styled(Nav) <StyledNavProps>`
   background-color: ${(props) => props.backgroundColor};
 `;
 
@@ -27,13 +27,14 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolling(true);
+      console.log('estou escrolando')
       setTimeout(() => {
         setIsScrolling(false);
       }, 100);
 
       // Change header color when scrolling
       if (window.scrollY > 0) {
-        setHeaderBackgroundColor('#yourColorHere'); // Change to the desired color
+        setHeaderBackgroundColor('#fff'); // Change to the desired color
       } else {
         setHeaderBackgroundColor('transparent');
       }
