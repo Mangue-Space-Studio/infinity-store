@@ -19,4 +19,9 @@ export const VideoGif = styled.video`
   margin: 0;
   object-fit: cover;
 `
- 
+export const Title = styled.h2`
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 4rem;
+  
+`
