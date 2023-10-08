@@ -18,6 +18,7 @@ export const gridItem = styled.div`
   align-items: center;
 
   &.active {
+    width: 350px;
     border: 2px solid white; // Define a borda azul quando o item estiver ativo
     box-shadow: 0 0 10px rgba(0, 0,0, 0.7);
     border-radius: 20px;
@@ -45,5 +46,9 @@ export const gridText = styled.p`
 `;
 
 export const gridContainerItem = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   
 `;
