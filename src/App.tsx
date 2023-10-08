@@ -1,9 +1,10 @@
-import { MainPage } from "./pages/mainPage"
+import FormFields from './pages/CreatePage/components/FormFields';
 
 function App() {
   return (
     <>
-      <MainPage/>
+      {/* <MainPage/> */}
+      <FormFields/>
     </>
   )
 }
