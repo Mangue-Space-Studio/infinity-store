@@ -1,10 +1,12 @@
-import Form from './pages/CreatePage/components/Form';
-// import FormFields from './pages/CreatePage/components/FormFields';
+
+import { MainPage } from "./pages/mainPage"
+import { CreatePage } from "./pages/CreatePage"
+import { GlobalStyle } from "./pages/CreatePage/style"
 
 function App() {
   return (
     <>
-      {/* <MainPage/> */}
+        <MainPage />
       <Form/>
     </>
   )
