@@ -7,9 +7,9 @@ import { GlobalStyle } from "./style";
 
 export function CreatePage() {
     return(
-        <> 
+     <> 
     
-     <Container/>
+     
       
      </>
     )

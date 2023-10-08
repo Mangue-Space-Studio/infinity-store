@@ -5,10 +5,7 @@ import { GlobalStyle } from "./pages/CreatePage/style"
 function App() {
   return (
     <>
-       
-        <CreatePage />
-    
-      
+        <MainPage />
     </>
   )
 }
