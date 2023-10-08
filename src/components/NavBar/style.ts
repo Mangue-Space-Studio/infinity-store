@@ -47,6 +47,10 @@ export const Li = styled.li`
     cursor: pointer;
     font-family: sans-serif;
 
+    &:hover {
+        text-shadow:  #F5DEB3;
+    }
+
     @media (max-width: 768px) {
         padding-left: 1rem; 
          /* Reduz o espaçamento para telas menores */

@@ -14,7 +14,7 @@ const StyledNav = styled(Nav) <StyledNavProps>`
 
 const NavBar = () => {
   const [activeItem, setActiveItem] = useState('inicio');
-  const [headerBackgroundColor, setHeaderBackgroundColor] = useState('transparent');
+  const [headerBackgroundColor, setHeaderBackgroundColor] = useState<string>('transparent');
   const [isScrolling, setIsScrolling] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -24,23 +24,31 @@ const NavBar = () => {
     }
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolling(true);
-      console.log('estou escrolando')
-      setTimeout(() => {
-        setIsScrolling(false);
-      }, 100);
 
-      // Change header color when scrolling
-      if (window.scrollY > 0) {
-        setHeaderBackgroundColor('#fff'); // Change to the desired color
-      } else {
-        setHeaderBackgroundColor('transparent');
-      }
-    };
+  const handleScroll = () => {
+    setIsScrolling(true);
+    console.log('window ', window.scrollY)
+    setTimeout(() => {
+      setIsScrolling(false);
+    }, 100);
+  }
+
+  useEffect(() => {
+
+    // Change header color when scrolling
+    if (window.scrollY > 100) {
+
+      console.log('estou escrolando')
+      setHeaderBackgroundColor('#fff'); // Change to the desired color
+    } else {
+      setHeaderBackgroundColor('#161616');
+    }
+
+    console.log(isScrolling);
+
 
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', () => console.log('estou me mexendo'));
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -54,19 +62,19 @@ const NavBar = () => {
       </Logo>
       <Ul>
         <a href="#inicio" onClick={() => scrollToSection('inicio')}>
-          <Li className={activeItem === 'inicio' ? 'active' : ''}>Início</Li>
+          <Li className={activeItem === 'inicio' ? 'active' : ''}>Home</Li>
         </a>
 
         <a href="#sobre" onClick={() => scrollToSection('sobre')}>
-          <Li className={activeItem === 'sobre' ? 'active' : ''}>Sobre</Li>
+          <Li className={activeItem === 'sobre' ? 'active' : ''}>Project</Li>
         </a>
 
         <a href="#adventure" onClick={() => scrollToSection('adventure')}>
-          <Li className={activeItem === 'adventure' ? 'active' : ''}>Aventura</Li>
+          <Li className={activeItem === 'adventure' ? 'active' : ''}>Adventure</Li>
         </a>
 
         <a href="#contact" onClick={() => scrollToSection('contact')}>
-          <Li className={activeItem === 'contact' ? 'active' : ''}>Contato</Li>
+          <Li className={activeItem === 'contact' ? 'active' : ''}>Contact</Li>
         </a>
       </Ul>
     </StyledNav>

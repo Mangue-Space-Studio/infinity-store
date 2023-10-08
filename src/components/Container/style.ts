@@ -55,6 +55,7 @@ export const Btn = styled.button`
 
   &:hover {
     opacity: 0.8;
+    box-shadow: 0 0 10px 0 #F5DEB3 inset, 0 0 10px 4px #F5DEB3;
     
   }
 

@@ -1,15 +1,16 @@
 import React from 'react'
 import { About, LittleVideo, Project, ProjectTitle, TextAbout } from './style'
 import asteroids from "../../assets/asteroids.mp4"
+import frog from "../../assets/frog.jpeg"
 const AboutProject = () => {
     return (
         <About id="sobre">
             <ProjectTitle>Project</ProjectTitle>
             <Project>
-                
-                <LittleVideo autoPlay muted loop>
-                    <source src={asteroids} type="video/mp4" />
-                </LittleVideo>
+
+                <LittleVideo src={frog} />
+                {/* <source src={frog} type="img/jpeg" /> */}
+
                 <TextAbout>
                     "Infinity Story" is more than just a platform.
                     It's a magical portal that takes children and teenagers on a unique

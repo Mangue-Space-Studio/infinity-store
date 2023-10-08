@@ -36,14 +36,16 @@ export const Project = styled.div`
   }
 `;
 
-export const LittleVideo = styled.video`
-  width: 480px;
-  height: 480px;
+export const LittleVideo = styled.img`
+  width: 380px;
+  height: 380px;
   padding: 1rem;
+  border-radius: 10px;
 
   @media (max-width: 768px) {
     width: 100%;
     height: auto;
+  border-radius: 10px;
   }
 `;
 
