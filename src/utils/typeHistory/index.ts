@@ -1,4 +1,5 @@
 export const typeHistory = [
+  "Choose a type Story",
   "Contos de Fadas",
   "Ficção Científica",
   "Fantasia Épica",
