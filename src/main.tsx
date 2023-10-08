@@ -10,6 +10,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    //apontar pra landingpage
+  },
+  {
+    path: "/infinityStory",
+    element: <App/>,
+    //apontar pra plataforma
   },
 ]);
 
