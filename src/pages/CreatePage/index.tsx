@@ -3,14 +3,13 @@ import Container from "../../components/Container/index";
 import NavBar from "../../components/NavBar";
 import { GlobalStyle } from "./style";
 
- 
+import FormPrompt from "./components/Form";
 
-export function CreatePage() {
-    return(
-     <> 
-    
-     
-      
-     </>
-    )
+export default function createPage() {
+  return (
+    <>
+      <FormPrompt />
+    </>
+  );
 }
+

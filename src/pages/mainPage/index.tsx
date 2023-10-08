@@ -1,3 +1,4 @@
+
 import AboutProject from "../../components/AboutProject";
 import Adventure from "../../components/Adventure";
 import Container from "../../components/Container";
@@ -15,3 +16,4 @@ export function MainPage() {
     </>
   )
 }
+
