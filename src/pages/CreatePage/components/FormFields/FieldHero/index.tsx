@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import * as S from "./styles";
 import { useState } from "react";
 
@@ -5,10 +6,14 @@ type ActiveItem = "ASTRO" | "LUCY" | "MAX" | "LUNA" | null;
 
 export default function FieldHero() {
   const [activeItem, setActiveItem] = useState<ActiveItem>(null);
-
+  const navigation = useNavigate()
   const handleItemClick = (itemName: ActiveItem) => {
     setActiveItem(itemName === activeItem ? null : itemName);
+    setTimeout(() => {
+      navigation('/selectStory')
+    }, 2*1000)
   };
+
   return (
     <S.containerFormFields>
       <S.mainText>Select the Tutor</S.mainText>

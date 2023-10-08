@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import App from "./App.tsx";
 import { GlobalStyle } from "./style.ts";
+import FieldHero from "./pages/CreatePage/components/FormFields/FieldHero/index.tsx"; 
+import FormPrompt from "./pages/CreatePage/components/Form/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,9 +17,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/infinityStory",
-    element: <App/>,
+    element: <FieldHero/>,
     //apontar pra plataforma
   },
+  {
+    path: '/selectStory',
+    element: <FormPrompt/>,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

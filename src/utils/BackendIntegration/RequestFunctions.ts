@@ -8,8 +8,10 @@ import { AiAPIResponse, ImagePromptParams, StoryPromptParams } from './Interface
 const rootUri = "https://infinite.keycore.com.br";
 
 export const getImageRequest = async (url: string, params: ImagePromptParams): Promise<any> => {
+  const fixedParams = params
+  fixedParams.characterDescription += ' no espaço'
   try {
-    const response: AxiosResponse = await axios.post(url, params);
+    const response: AxiosResponse = await axios.post(url, fixedParams);
     return response.data;
   }
 

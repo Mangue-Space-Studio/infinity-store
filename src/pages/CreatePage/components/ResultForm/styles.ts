@@ -11,6 +11,7 @@ export const MainResponse = styled.div`
   align-items: center;
   gap: 1.5 rem;
   color: darkgray;
+  padding: 16px 32px;
   background: linear-gradient(
     100deg,
     #ababab -101.16%,
@@ -19,6 +20,7 @@ export const MainResponse = styled.div`
 `;
 
 export const AiText = styled.p`
+  margin-top: 32px;
   color: #f5f5f5;
   text-align: justify;
   font-size: 14px;
