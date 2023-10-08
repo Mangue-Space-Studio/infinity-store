@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios, { AxiosResponse } from 'axios';
 import { AiAPIResponse, ImagePromptParams, StoryPromptParams } from './Interfaces';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
 // dotenv.config();
 
