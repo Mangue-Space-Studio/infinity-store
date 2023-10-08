@@ -16,10 +16,21 @@ export const gridItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &.active {
+    border: 2px solid white; // Define a borda azul quando o item estiver ativo
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.7);
+    border-radius: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const gridImage = styled.img`
   width: 350px;
+  margin: 0;
   border-radius: 20px;
 `;
 
@@ -31,4 +42,8 @@ export const gridText = styled.p`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+`;
+
+export const gridContainerItem = styled.div`
+  
 `;
