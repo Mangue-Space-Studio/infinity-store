@@ -51,7 +51,7 @@ export const Btn = styled.button`
   text-align: center;
   position: relative;
   bottom: 500px;
-  left: 690px;
+  left: 800px;
 
   &:hover {
     opacity: 0.8;
